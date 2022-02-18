@@ -157,22 +157,25 @@ a:focus {
     box-shadow: 0 2px 5px rgba(0, 0, 0, .3);
 }
 
+@media screen and (min-width: 700px) {
+    .navbar-brand{
+        font-size: 40px;
+        color: blue;
+    }
+}
+@media screen and (max-width: 300px) {
+    .navbar-brand{
+        font-size: 25px;
+    }
+}
 .navbar .navbar-brand {
-    margin: 0;
-    font-size: 35px;
+    margin: 0; 
     line-height: 0px;
     font-weight: 700;
-    letter-spacing: 2px;
     transition: .5s;
     margin-left: 10%;
-    font-family: 'Syne Tactile', cursive;
 }
-/* @media screen and (max-width: 550px) {
-    .navbar-brand{
-        font-size: 34px;
-        margin-left: 60px;
-    }
-} */
+
 /* @media screen  and (min-width: 1280px) {
     .nav-brand{
         font-size: 45px;
@@ -287,7 +290,6 @@ a:focus {
     text-align: right;
     padding-right: 75px;
     width: 80%;
-    height: 450px;
     vertical-align: top;
     /* background-color: white; 
     border-radius:100px 300px  100px 100px;
@@ -344,7 +346,11 @@ a:focus {
     font-weight: 300;
     color: #ffffff;
 }
-
+.hero-btn{
+    display: flex;
+    width: 98%;
+    margin: auto;
+}
 .hero .hero-btn .btn {
     margin-top: 35px;
     color: rgba(239, 35, 60, .95);
@@ -548,6 +554,9 @@ a:focus {
 }
 .about-text-desc {
     display: flex;
+}
+.about-text-desc > div{
+    margin: 1%;
 }
 .about .skills {
     margin-bottom: 30px;
@@ -856,8 +865,7 @@ a:focus {
 }
 
 .portfolio .portfolio-text h3 {
-    /* width: calc(100% - 70px); */
-    font-size: 18px;
+    font-size: 15px;
     font-weight: 600;
     margin-top: 5px;
     white-space: nowrap;
@@ -909,11 +917,24 @@ a:focus {
     text-align: center;
     color: rgba(239, 35, 60, .95);
 }
-.portfolio-btns{
+@media screen and (max-width: 300px) {
+    .portfolio-btns{
+        display: flex;
+        width: 100%;
+        margin: auto;
+    }
+    #setbtn{
+    width: 100%;
+    font-size: 18px;
+   }
+}
+
+@media screen and (min-width:310px) {
+    .portfolio-btns{
     width: 80%;
     margin:2% auto;
 }
-.portfolio-btns >a{
+    .portfolio-btns >a{
     display: inline-block;
     margin: 2%;
 }
@@ -922,6 +943,8 @@ a:focus {
     width: 45%;
     font-size: 18px;
 }
+}
+
 
 /*******************************/
 /********* My Skills **********/
@@ -945,7 +968,7 @@ a:focus {
     }
 }
 .skills-icons > *{
-    width: 130px;
+    width: 110px;
     height: 130px;
     transition: all 0.25s ease-in-out 0s;
     margin-bottom: 5%;
@@ -1089,7 +1112,7 @@ a:focus {
 
 .footer .footer-menu {
     width: 100%;
-    display: flex;
+    display: inline-block;
     justify-content: center;
 }
 
@@ -1099,7 +1122,7 @@ a:focus {
     font-weight: 600;
     line-height: 20px;
     padding: 0 15px;
-    border-right: 1px solid #ffffff;
+    /* border-right: 1px solid #ffffff; */
 }
 
 .footer .footer-menu p:last-child {
@@ -1128,29 +1151,6 @@ a:focus {
 
 .footer .footer-social a:hover i {
     color: #414141;
-}
-
-.footer .copyright {
-    position: relative;
-    text-align: center;
-    margin-top: 30px;
-    padding-top: 25px;
-    padding-bottom: 25px;
-}
-
-.footer .copyright::before {
-    position: absolute;
-    content: "";
-    width: 50%;
-    height: 1px;
-    top: 0;
-    left: 25%;
-    background: rgba(256, 256, 256, .2);
-}
-
-.footer .copyright p {
-    margin: 0;
-    color: #ffffff;
 }
 
 .footer .copyright .col-md-6:last-child p {
@@ -1185,11 +1185,11 @@ a:focus {
     }
 
     .footer .footer-menu p {
-        font-size: 16px;
+        font-size: 15px;
         line-height: 16px;
         padding: 0 5px;
     }
-    .footer-menu{
+    /* .footer-menu{
         margin: 4%;
-    }
+    } */
 }
