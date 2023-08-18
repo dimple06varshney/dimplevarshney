@@ -829,10 +829,16 @@ a:focus {
     position: relative;
     width: 100%;
 }
-.project-margin{
-    margin: 2%;
-}
 
+.grid-view {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two columns */
+    gap: 20px; /* Adjust the gap between items */
+}
+.grid-view > div {
+    /* border: 1px solid #ccc; */
+    padding: 20px;
+}
 .portfolio .portfolio-img {
     position: relative;
     overflow: hidden;
@@ -845,10 +851,6 @@ a:focus {
     object-fit: cover;
     transform: scale(1.1);
     transition: .5s;
-}
-
-.portfolio .portfolio-item:hover img {
-    margin-left: 15px;
 }
 
 .portfolio .portfolio-text {
@@ -910,8 +912,8 @@ a:focus {
 .portfolio-item:hover .tech-stacks{
     color: white;
     /* background-color: rgba(17, 12, 12, 0.95); */
-    -webkit-transition: ease-out 0.3s;
-    padding-bottom: 2%;
+    /* -webkit-transition: ease-out 0.3s; */
+    /* padding-bottom: 2%; */
 }
 .tech-text{
     text-align: center;
